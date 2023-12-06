@@ -2,18 +2,13 @@ public class MainPage extends Page {
   Button start;
   Button login;
   ListBox list;
-  
+
   static final String START_LABEL = "Start";
   static final String LOGIN_LABEL = "Logon";
   static final String LIST_LABEL = "Stadium Selector:";
-  
+
   String[] stadiums = {
-    "Etihad Stadium",
-    "Marvel Stadium",
-    "Melbourne Cricket Ground",
-    "Windsor Park",
-    "Wembley Stadium",
-    "Estádio do Dragão"
+    "Ball Tracker" + " " + "متتبع الكرة"
   };
 
   MainPage() {
@@ -58,7 +53,7 @@ public class MainPage extends Page {
   void onClickStart() {
     game.start();
   }
-  
+
   void onClickList(int selectedStadium) {
     String stadiumName = stadiums[selectedStadium];
     switch (selectedStadium) {

@@ -1,3 +1,34 @@
+/*
+Certainly! Here's a summarized list of the requirements for the processing app for Mada:
+
+1. **Develop a Custom Processing App**:
+   - Design the app to be more visually appealing and "sexier" than usual.
+
+2. **Integration of Mada's Logo**:
+   - Ensure Mada's logo is prominently displayed within the app.
+
+3. **Removal of Redundant Stadium Options**:
+   - Streamline the app by removing unnecessary stadium-related options.
+
+4. **Setup on Bahrain AWS Server**:
+   - Deploy the app on the Bahrain AWS server for optimal regional performance.
+   - Alternatively, create a dedicated MQTT channel to ensure isolated operation and avoid interference with existing systems.
+
+5. **Dual Language Interface (Arabic and English)**:
+   - Include menu options and writing in both Arabic and English.
+   - Assess the need for special libraries to support the Arabic alphabet in the app.
+
+6. **Long-Term Showroom Deployment**:
+   - Design the app with a consideration for permanent display in Mada's showroom.
+
+7. **Export as a Standalone Executable (EXE) File**:
+   - Similar to the Telstra project, provide the app in an executable format for easy deployment and use.
+
+8. **Coordination with Team Members**:
+   - Collaborate with Tim for the AWS server setup and MQTT channel implementation.
+   - Receive and incorporate Arabic translations as provided for accurate language support.
+*/
+
 import websockets.*;
 
 import controlP5.*;

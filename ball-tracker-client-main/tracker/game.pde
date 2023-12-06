@@ -51,8 +51,8 @@ public class GamePage extends Page {
   String toTautJson() {
     return "{\n\"T\":" +
       String.format("%.02f", timestamp) + ",\n\"X\":" +
-      mouseX/15 + ",\n\"Y\":" +
-      mouseY/15 + ",\n\"P\":" +
+      ((mouseX/15)-102) + ",\n\"Y\":" +
+      ((mouseY/15)-64) + ",\n\"P\":" +
       possession + ",\n\"Pa\":" +
       pass + ",\n\"G\":" +
       goal + ",\n\"T\":" +
@@ -68,8 +68,8 @@ public class GamePage extends Page {
 
     return "{\"action\": \"" + action + "\", \"message\": {\"T\":" +
       String.format("%.02f", timestamp) + ",\"X\":" +
-      mouseX/15 + ",\"Y\":" +
-      mouseY/15 + ",\"P\":" +
+      ((mouseX/15)-102) + ",\"Y\":" +
+      ((mouseY/15)-64) + ",\"P\":" +
       possession + ",\"Pa\":" +
       pass + ",\"G\":" +
       goal + ",\"T\":" +
@@ -114,9 +114,9 @@ public class GamePage extends Page {
     int rightPad = 1340;
 
     //Instructions on screen
-    text("Mouse Click - Possession Change", leftPad, 30);
-    text("Press 'A' - Pass", leftPad, 55);
-    text("Press '1' - Goal", leftPad, 80);
+    text("Mouse Click - Possession Change | النقر بالماوس - تغيير الحيازة", leftPad, 30);
+    text("Press 'A' - Pass | اضغط على 'أ' - تمرير", leftPad, 55);
+    text("Press '1' - Goal | اضغط على '1' - الهدف ", leftPad, 80);
     //text("Press '2' - Behind", leftPad, 105);
     // text("Press 'J' - T1", leftPad, 130);
     // text("Press 'K' - T2", leftPad, 155);
@@ -124,12 +124,12 @@ public class GamePage extends Page {
     // text("Press 'D' - OOB", leftPad, 205);
 
     // write output as text on screen for testing purposes.
-    text("Timestamp: " + String.format("%.02f", timestamp), rightPad, 30);
-    text("X: " + mouseX/15, rightPad, 55);
-    text("Y: " + mouseY/15, rightPad, 80);
-    text("Possession: " + possession, rightPad, 105);
-    text("Pass: " + pass, rightPad, 130);
-    text("Goal: " + goal, rightPad, 155);
+    text("Timestamp:  " + String.format("%.02f", timestamp), rightPad, 30);
+    text("X:  " + mouseX/15, rightPad, 55);
+    text("Y:  " + mouseY/15, rightPad, 80);
+    text("Possession:  " + possession, rightPad, 105);
+    text("Pass:  " + pass, rightPad, 130);
+    text("Goal:  " + goal, rightPad, 155);
     //text("OOB: " + oob, rightPad, 180);
 
 

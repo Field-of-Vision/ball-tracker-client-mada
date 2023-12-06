@@ -1,6 +1,4 @@
-/*
-Certainly! Here's a summarized list of the requirements for the processing app for Mada:
-
+      /*
 1. **Develop a Custom Processing App**:
    - Design the app to be more visually appealing and "sexier" than usual.
 
@@ -44,6 +42,7 @@ PImage[] ball = new PImage[3];
 PImage paused;
 Robot robot;
 PImage goal_img;
+PImage mada;
 
 GamePage game;
 MainPage menu;
@@ -95,6 +94,7 @@ void setup() {
 
   paused = loadImage(dataPath(FIG_PATH) + File.separator + "Pause.png");
   goal_img = loadImage(dataPath(FIG_PATH) + File.separator + "goal.gif");
+  mada = loadImage(dataPath(FIG_PATH) + File.separator + "mada.png");
 
   frameRate(60);
   webSetup();
@@ -117,8 +117,8 @@ void connectedCorrectly() {
 
 void displayConnectionWarning() {
   fill(255, 0, 0);
-  textSize(32);
-  textAlign(CENTER, CENTER);
+  //textSize(32);
+  //textAlign(CENTER, CENTER);
   text("Internet connection lost!", width / 2, height / 2);
 }
 

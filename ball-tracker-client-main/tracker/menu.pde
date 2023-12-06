@@ -8,7 +8,7 @@ public class MainPage extends Page {
   static final String LIST_LABEL = "Stadium Selector:";
 
   String[] stadiums = {
-    "Ball Tracker" + " " + "متتبع الكرة"
+    "Ball Tracker Demonstration" + " " + "                                                                    متتبع الكرة"
   };
 
   MainPage() {
